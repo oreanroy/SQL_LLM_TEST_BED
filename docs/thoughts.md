@@ -70,7 +70,11 @@ Total price (numeric decial)
 Logs of meeting
 
 2024-10-26T17:49:47Z
-Discussion:- 
+Discussion:-  Felipe, showed his present tool. (Datasquirell)
+			  Rahul, Presented his ideas around real life problem and his motivation to work on POC.
+			  Initiated creation of a testing setup for the tool.
+
+
 Next steps:- Rahul to improve the table generation script (p0)
 	Write a real life txns generation script (p0)
 	Write a real life mocking read load generation. (p1)
