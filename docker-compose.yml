@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my-postgres-container
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5438:5432"  # Note: Map the container's internal port 5432 to your machine's port 5438
+    volumes:
+      - postgres_data_test:/var/lib/postgresql/data
+    command: ["postgres", "-c", "port=5432"]  # Postgres runs on port 5432 inside the container
+
+volumes:
+  postgres_data_test:
+    external: true  # Keep this only if you've created this volume manually
